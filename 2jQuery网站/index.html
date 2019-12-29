@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="iceStone <ice@wedn.net>">
+  
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <title>jQuery搭建网站</title>
+            <link rel="stylesheet" type="text/css" href="css/reset.css">
+
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+            <link rel="stylesheet" type="text/css" href="css/style1.css">
+        <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+        
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/helang.css">
+    <style type="text/css">
+
+        <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+ <link rel="stylesheet" href="css/helang.css">
+    <style type="text/css">
+        .info_box{
+            margin: 100px auto 0 auto;
+            width: 400px;
+            background-color: #ffffff;
+            color: #333333;
+            padding:0 0 0 30px;
+        }
+        .info_box>li{
+            padding: 15px 0;
+            font-size: 14px;
+            border-top: #e5e5e5 dashed 1px;
+        }
+        .info_box>li:first-child{
+            list-style: none;
+            font-size: 16px;
+            color: #FD463E;
+            border-top: none;
+            font-weight: bold;
+        }
+        .info_box>li:last-child{
+            list-style: none;
+            font-size: 12px;
+            color: #999999;
+        }
+    </style>       
+</head>
+
+<body>
+  <!-- 顶部区域 -->
+  <header>
+    <!-- 通栏菜单 -->
+   
+          <div class="tb-2 col-md-5 text-center text-muted">
+            <i class="icon-telephone"></i><span>4006-89-4006（服务时间：9:00-21:00）</span>
+          </div>
+          <nav class="hl_nav">
+    <ul class="nav_list">
+        <li class="active">
+            <a class="nav_head" href="#">网站首页</a>
+            <a class="nav_body" href="#">网站首页</a>
+            <a class="nav_body" href="#">网站首页</a>
+            <a class="nav_body" href="#">网站首页</a>
+            <a class="nav_body" href="#">网站首页</a>
+            <a class="nav_body" href="#">网站首页</a>
+        </li>
+        <li>
+            <a class="nav_head" href="#">在线下载</a>
+            <a class="nav_body" href="#">在线下载</a>
+            <a class="nav_body" href="#">在线下载</a>
+            <a class="nav_body" href="#">在线下载</a>
+            <a class="nav_body" href="#">在线下载</a>
+            <a class="nav_body" href="#">在线下载</a>
+        </li>
+        <li>
+            <a class="nav_head" href="#">成功案例</a>
+            <a class="nav_body" href="#">成功案例</a>
+            <a class="nav_body" href="#">成功案例</a>
+            <a class="nav_body" href="#">成功案例</a>
+        </li>
+        <li>
+            <a class="nav_head" href="#">新闻动态</a>
+            <a class="nav_body" href="#">新闻动态</a>
+            <a class="nav_body" href="#">新闻动态</a>
+            <a class="nav_body" href="#">新闻动态</a>
+        </li>
+        <li>
+            <a class="nav_head" href="#">专业团队</a>
+            <a class="nav_body" href="#">专业团队</a>
+            <a class="nav_body" href="#">专业团队</a>
+        </li>
+        <li>
+            <a class="nav_head" href="#">招贤纳士</a>
+            <a class="nav_body" href="#">招贤纳士</a>
+        </li>
+        <li>
+            <a class="nav_head" href="#">关于我们</a>
+        </li>
+    </ul>
+</nav>
+<div id="searchcon"></div>
+ <div class="slide-content">
+            <div class="slide-title">jQuery左右滑动列表</div>
+            <div class="slide-item">
+                <div class="slide-item-box">
+                    <div class="hd">
+                        <a href="javascript:;" class="prev prev-bg"></a>
+                        <a href="javascript:;" class="next next-bg"></a>
+                    </div>
+                    <div class="bd slide-item-body">
+                        <ul class="clearfix" style="overflow:visible">
+                            <li>
+                                <a href="#">
+                                    <div class="new-img">
+                                        <img src="images/t1.png" alt="">
+                                    </div>
+                                    <div class="new-body">
+                                        <p class="new-body-title">jQuery左右滑动列表标题信息</p>
+                                        <p class="new-body-text">jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="new-img">
+                                        <img src="images/t2.png" alt="">
+                                    </div>
+                                    <div class="new-body">
+                                        <p class="new-body-title">jQuery左右滑动列表标题信息</p>
+                                        <p class="new-body-text">jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="new-img">
+                                        <img src="images/t3.png" alt="">
+                                    </div>
+                                    <div class="new-body">
+                                        <p class="new-body-title">jQuery左右滑动列表标题信息</p>
+                                        <p class="new-body-text">jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="new-img">
+                                        <img src="images/t4.png" alt="">
+                                    </div>
+                                    <div class="new-body">
+                                        <p class="new-body-title">jQuery左右滑动列表标题信息</p>
+                                        <p class="new-body-text">jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="new-img">
+                                        <img src="images/t5.png" alt="">
+                                    </div>
+                                    <div class="new-body">
+                                        <p class="new-body-title">jQuery左右滑动列表标题信息</p>
+                                        <p class="new-body-text">jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="new-img">
+                                        <img src="images/t6.png" alt="">
+                                    </div>
+                                    <div class="new-body">
+                                        <p class="new-body-title">jQuery左右滑动列表标题信息</p>
+                                        <p class="new-body-text">jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-links">
+                <a href="#">更多信息 > </a>
+            </div>
+        </div>
+
+
+		
+ <script type="text/javascript">
+            jQuery(".slide-item-box").slide({
+                titCell: ".hd ul",
+                mainCell: ".bd ul",
+                autoPage: true,
+                effect: "leftLoop",
+                autoPlay: true,
+                scroll: 3,
+                vis: 3,
+                delayTime: 700,
+                trigger: "click"
+            })
+        </script>
+           <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+    <script type="text/javascript" src="js/a.js"></script>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
